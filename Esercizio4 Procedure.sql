@@ -1,0 +1,45 @@
+
+--CREATE PROCEDURE InsertImpiegato (
+--@Cognome nvarchar(20) = 'De La Rosa Ramirez',
+--@Nome nvarchar(20) = 'Ricardo',
+--@CodiceFiscale nchar(16) = 'DRRRCD98S01G329E',
+--@Eta int = 23,
+--@RedditoMensile money = 1600,
+--@DetrazioneFiscale bit = 1
+--)
+--AS
+--BEGIN
+--	INSERT INTO Impiegato 
+--	(Cognome, Nome, [Codice Fiscale], Eta, [Reddito Mensile], [Detrazione fiscale])
+--	VALUES
+--	(@Cognome, @Nome, @CodiceFiscale, @Eta, @RedditoMensile, @DetrazioneFiscale)
+--END
+--GO
+
+
+--CREATE PROCEDURE UpdateImpiegato (
+--@Cognome nvarchar(20) = 'De La Rosa Ramirez',
+--@Nome nvarchar(20) = 'Ricardo',
+--@CodiceFiscale nchar(16) = 'DRRRCD98S01G329E',
+--@Eta int = 25,
+--@RedditoMensile money = 1600,
+--@DetrazioneFiscale bit = 1,
+--@Id int
+--)
+--AS
+--BEGIN
+--	UPDATE Impiegato 
+--	SET Cognome = @Cognome, Nome = @Nome, [Codice Fiscale] = @CodiceFiscale, Eta = @Eta, [Reddito Mensile] = @RedditoMensile, [Detrazione fiscale] = @DetrazioneFiscale
+--	WHERE IDImpiegato = @Id
+--END
+--GO
+
+--CREATE PROCEDURE DeleteImpiegato (
+--@Id int
+--)
+--AS
+--BEGIN
+--	DELETE FROM Impiegato 
+--	WHERE IDImpiegato = @Id
+--END
+--GO
